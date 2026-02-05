@@ -6,8 +6,8 @@
 
 <title>Preparing...</title>
 
-<!-- META REDIRECT (AMAN DI GITHUB) -->
-<meta http-equiv="refresh" content="3;url=https://bio-shortlink.com/mklsas">
+<!-- META REDIRECT (BACKUP) -->
+<meta http-equiv="refresh" content="4;url=https://bio-shortlink.com/mklsas">
 
 <style>
 html, body {
@@ -27,23 +27,29 @@ html, body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  cursor: pointer;
 }
 
+/* IMAGE */
 #overlay img {
   max-width: 90%;
   border-radius: 10px;
+  cursor: pointer;
 }
 
+/* TEXT LINK */
 .text {
   margin-top: 15px;
-  color: #fff;
   font-size: 18px;
   font-weight: bold;
 }
 
-.text span {
+.text a {
   color: #00ffcc;
+  text-decoration: none;
+}
+
+.text a:hover {
+  text-decoration: underline;
 }
 </style>
 
@@ -52,19 +58,25 @@ function goRedirect(){
   window.location.href = "https://bio-shortlink.com/mklsas";
 }
 
-// backup JS (kalau meta ke-skip)
-setTimeout(goRedirect, 3000);
+// JS backup
+setTimeout(goRedirect, 4000);
 </script>
 
 </head>
 <body>
 
-<div id="overlay" onclick="goRedirect()">
+<div id="overlay">
   <div>
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEie5-wNqe834zZpRVyFKuyukeICRhVGI1QLK8PvjOLR-BZcx7Y9ju9Fxs8FDZMECNk6Y98D-tkr9DD-ciBhlZuPzczTJtWR00SoLTe9tar4zueQ2hN_NlCMe8kTr8XLF7nNwqjP0fDx5eH_N2ieDryOQDi0IafkZ_y3bVxWpsmPRyfrYwcZPyT_x8ncxyU/s320/596723796_1437561285038750_7393684906158937358_n.jpg">
+    <!-- GAMBAR KLIK -->
+    <img onclick="goRedirect()"
+      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEie5-wNqe834zZpRVyFKuyukeICRhVGI1QLK8PvjOLR-BZcx7Y9ju9Fxs8FDZMECNk6Y98D-tkr9DD-ciBhlZuPzczTJtWR00SoLTe9tar4zueQ2hN_NlCMe8kTr8XLF7nNwqjP0fDx5eH_N2ieDryOQDi0IafkZ_y3bVxWpsmPRyfrYwcZPyT_x8ncxyU/s320/596723796_1437561285038750_7393684906158937358_n.jpg"
+      alt="Loading">
 
+    <!-- TEKS KLIK -->
     <div class="text">
-      ⏳ <span>Preparing video...</span>
+      ⏳ <a href="https://bio-shortlink.com/mklsas">
+        Preparing video... (tap here)
+      </a>
     </div>
   </div>
 </div>
